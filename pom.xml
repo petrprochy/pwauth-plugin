@@ -2,10 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<groupId>org.jvnet.hudson.plugins</groupId>
+		<groupId>org.jenkins-ci.plugins</groupId>
 		<artifactId>plugin</artifactId>
-		<version>1.389</version>
-		<relativePath>../pom.xml</relativePath>
+		<version>3.57</version>
 	</parent>
 
 	<name>PWauth Security Realm</name>
@@ -24,24 +23,7 @@
 		</developer>
 	</developers>
 
-	<repositories>
-		<repository>
-			<id>repo.jenkins-ci.org</id>
-			<url>http://repo.jenkins-ci.org/public/</url>
-		</repository>
-	</repositories>
-
-	<pluginRepositories>
-		<pluginRepository>
-			<id>repo.jenkins-ci.org</id>
-			<url>http://repo.jenkins-ci.org/public/</url>
-		</pluginRepository>
-	</pluginRepositories>
-	
-	<distributionManagement>
-      <repository>
-        <id>java.net-m2-repository</id>
-        <url>http://maven.hudson-labs.org/content/repositories/releases/</url>
-      </repository>
-    </distributionManagement>
+	<properties>
+		<java.level>8</java.level>
+	</properties>
 </project>
